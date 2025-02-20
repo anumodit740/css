@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: rgb(199, 17, 17);
+    padding: 1.8rem;
+}
+h1{
+    color: white;
+    font-size: 1.7rem;
+}
+.right button{
+    background-color: rgb(199, 17, 17);
+    margin-left: 0.7rem;
+    font-size: 1rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0rem;
+    background-color: rgba(207, 206, 206, 0.244);
+}
+.searching{
+    width:400px ;
+    max-width: 60%;
+    height: auto;
+    font-size: 1.2rem;
+    padding: 3px;
+    border-radius: 5px;
+}
+.search > button{
+    margin-left: 0.5rem;
+font-size: 1.3rem;
+background-color: rgb(199,17,17);
+color: white;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./../mover.jpg);
+    padding: 2rem 0rem;
+}
+.hero>h2{
+    color: white;
+    font-size: 2rem;
+    background-color: black;
+}
+.hero>button{
+    background-color: rgb(199, 17, 17);
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    padding: 0.3rem;
+    border-radius: 10px;
+}
+.ab{
+    text-align: center;
+    margin-top: 1rem;
+}
+mover>h2{
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.movies{
+    display: flex;
+    overflow-x: scroll;
+   
+}
+.card{
+    text-align: center;
+    border: 0.5rem solid rgb(209, 206, 206);
+    background-color:rgb(209, 206, 206);
+    cursor: pointer;
+    margin-left: 1rem;
+    border-radius: 10px;
+}
+.imgs{
+    height: 350px;
+}
+.card>h3{
+  font-size: 2rem;
+}
+.bot{
+    margin-top: 2rem;
+    text-align: center;
+}
+.bot>img{
+    /* need this when you change the screen it will not get adjust because it not under fles  */
+max-width: 80%;
+border-radius: 10px;
+}
+@media(max-width:600px)
+{
+    .logo{
+        flex-direction: column;
+        align-items: center;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+    .movies{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
